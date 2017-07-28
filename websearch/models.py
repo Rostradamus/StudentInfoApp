@@ -29,6 +29,6 @@ class Info(models.Model):
         self.save()
 
     def __str__(self):
-        return self.major + str(self.tutor_course)
+        return "Date: " + str(self.created_date.date()) + " " + self.name + " Year:" + str(self.year)
 
 
